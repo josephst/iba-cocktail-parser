@@ -43,6 +43,7 @@ const processDrinkList = (inputDrinks) => {
                     name: inputIngredient.special,
                     quantity: 0,
                     type: 'Unknown',
+                    unit: undefined,
                 });
             }
             else {

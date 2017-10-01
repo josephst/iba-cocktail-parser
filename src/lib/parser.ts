@@ -37,6 +37,7 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
           name: inputIngredient.special,
           quantity: 0,
           type: 'Unknown',
+          unit: undefined,
         }) as OutputIngredient;
       } else {
         let unit;
