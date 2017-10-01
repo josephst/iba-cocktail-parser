@@ -20,5 +20,5 @@ export interface Ingredient {
   name: string;
   type: string;
   quantity: number;
-  unit?: string;
+  unit: string | null;
 }

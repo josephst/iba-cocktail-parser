@@ -37,7 +37,7 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
           name: inputIngredient.special,
           quantity: 0,
           type: 'Unknown',
-          unit: undefined,
+          unit: null,
         }) as OutputIngredient;
       } else {
         let unit;
@@ -70,7 +70,7 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
       ingredients: parsedIngredients,
       name,
       source: 'IBA Official Cocktail',
-      steps: preparation,
+      steps: preparation || 'No instructions given',
     };
     return parsed;
   });

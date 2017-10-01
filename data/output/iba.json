@@ -136,7 +136,8 @@
         {
           "name": "3 dashes Strawberry syrup",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Rose",
@@ -165,17 +166,20 @@
         {
           "name": "2 dashes Angostura Bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "1 sugar cube",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Few dashes plain water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Old Fashioned",
@@ -210,17 +214,20 @@
         {
           "name": "1/2 bar spoon Maraschino",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "1/4 bar spoon Absinthe",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "3 dashes Orange Bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Tuxedo",
@@ -255,17 +262,20 @@
         {
           "name": "6 Mint sprigs",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 teaspoons white sugar",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Soda water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Mojito",
@@ -300,7 +310,8 @@
         {
           "name": "Dash of Angostura bitters (optional)",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Horse's Neck",
@@ -359,7 +370,8 @@
         {
           "name": "3 to 4 dashes Angostura bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Planter's Punch",
@@ -436,7 +448,8 @@
         {
           "name": "1 raw egg white (small egg)",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Pisco Sour",
@@ -501,7 +514,8 @@
         {
           "name": "1 dash of Cola",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Long Island Iced Tea",
@@ -542,7 +556,8 @@
         {
           "name": "Few drops of Egg White",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Clover Club",
@@ -745,7 +760,8 @@
         {
           "name": "1 dash Angostura Bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Manhattan",
@@ -858,12 +874,14 @@
         {
           "name": "Sugar syrup (according to individual preference of sweetness)",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "1 short strong Espresso",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Espresso Martini",
@@ -934,7 +952,8 @@
         {
           "name": "2 dashes Sugar syrup",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Champagne",
@@ -1395,7 +1414,8 @@
         {
           "name": "Splash of Soda water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Spritz Veneziano",
@@ -1616,22 +1636,26 @@
         {
           "name": "2 to 3 dashes of Worcestershire Sauce",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Tabasco",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Celery salt",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Pepper",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Bloody Mary",
@@ -1720,16 +1744,19 @@
         {
           "name": "1 dash Lime juice",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Top with Prosecco",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Barracuda",
-      "source": "IBA Official Cocktail"
+      "source": "IBA Official Cocktail",
+      "steps": "No instructions given"
     },
     {
       "dateCreated": "2017-9-30",
@@ -1801,12 +1828,14 @@
         {
           "name": "2 drops Absinthe",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 drops Grenadine",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Monkey Gland",
@@ -1835,12 +1864,14 @@
         {
           "name": "2 drops Peach Bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 Fresh mint leaves",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Derby",
@@ -1917,7 +1948,8 @@
         {
           "name": "1 teaspoon of brown sugar",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Irish Coffee",
@@ -1952,12 +1984,14 @@
         {
           "name": "1 sugar cube",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 dashes Peychaud’s bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Sazerac",
@@ -1992,7 +2026,8 @@
         {
           "name": "A splash of soda water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Americano",
@@ -2057,7 +2092,8 @@
         {
           "name": "1 dash Angostura bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Singapore Sling",
@@ -2128,7 +2164,8 @@
         {
           "name": "1 slice lime in a highball glass",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Moscow Mule",
@@ -2229,17 +2266,20 @@
         {
           "name": "4 fresh mint sprigs",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "1 teaspoon powdered sugar",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 teaspoons water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Mint Julep",
@@ -2274,7 +2314,8 @@
         {
           "name": "2 bar spoons of Agave nectar",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Tommy's Margarita",
@@ -2381,12 +2422,14 @@
         {
           "name": "2 dashes Angostura Bitters",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "1 sugar cube",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Champagne Cocktail",
@@ -2553,22 +2596,26 @@
         {
           "name": "1 Egg white",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "3 dashes Orange flower water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 drops Vanilla extract",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Soda water",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Ramos Fizz",
@@ -2825,12 +2872,14 @@
         {
           "name": "half fresh lime cut into 4 wedges",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "2 teaspoon sugar",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Caipirinha",
@@ -2877,27 +2926,32 @@
         {
           "name": "1 teaspoon clear honey",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Half slice onion finely chopped",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Few slices fresh red hot chili peppers",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Few drops Worchestershire sauce",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         },
         {
           "name": "Salt",
           "quantity": 0,
-          "type": "Unknown"
+          "type": "Unknown",
+          "unit": null
         }
       ],
       "name": "Vampiro",

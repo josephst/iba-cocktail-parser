@@ -18,4 +18,4 @@ const combiner = (inputs, output) => {
     }
     fs.writeFileSync(output, JSON.stringify({ drinks: inputDrinks }, null, 2));
 };
-combiner(cli.input.slice(0, cli.input.length - 2), cli.input[cli.input.length - 1]);
+combiner(cli.input.slice(0, cli.input.length - 1), cli.input[cli.input.length - 1]);
