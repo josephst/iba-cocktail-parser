@@ -38,14 +38,22 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
           quantity: 0,
           type: 'Unknown',
         }) as OutputIngredient;
+      } else {
+        let unit;
+        switch (inputIngredient.unit) {
+          case ('cl'): unit = 'cL'; break;
+          case ('ml'): unit = 'mL'; break;
+          default: unit = inputIngredient.unit; break;
+        }
+        return ({
+          name: inputIngredient.label || inputIngredient.ingredient,
+          quantity: inputIngredient.amount,
+          type: 'Unknown',
+          unit,
+        }) as OutputIngredient;
       }
-      return ({
-        name: inputIngredient.label || inputIngredient.ingredient,
-        quantity: inputIngredient.amount,
-        type: 'Unknown',
-        unit: inputIngredient.unit,
-      }) as OutputIngredient;
     });
+
     const parsed: OutputDrink = {
       dateCreated: (new Date()).toLocaleDateString(),
       default: true,
@@ -69,7 +77,8 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
 
 const writeOutput = async (outPath: string, drinks: OutputDrink[]) => {
   return new Promise((resolve, reject) => {
-    fs.writeFile(outPath, JSON.stringify(drinks, null, 2), (err) => {
+    const output = { drinks };
+    fs.writeFile(outPath, JSON.stringify(output, null, 2), (err) => {
       err ? reject(err) : resolve();
     });
   });

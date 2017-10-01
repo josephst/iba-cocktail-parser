@@ -1,0 +1,83 @@
+{
+  "drinks": [{
+    "id": 1,
+    "default": true,
+    "dateCreated": "2017-07-20",
+    "hidden": false,
+    "favorite": true,
+    "name": "Gin and Tonic",
+    "ingredients": [{
+        "name": "Gin",
+        "type": "Alcohol",
+        "quantity": 2,
+        "unit": "oz"
+      },
+      {
+        "name": "Tonic",
+        "type": "Mixer",
+        "quantity": 4,
+        "unit": "oz"
+      },
+      {
+        "name": "Lime juice",
+        "type": "Fruit juice",
+        "quantity": 0.5,
+        "unit": "oz"
+      },
+      {
+        "name": "Lime wedge",
+        "type": "Garnish",
+        "quantity": 1,
+        "unit": null
+      }
+    ],
+    "details": {
+      "category": "Highball, Collins, and Fizzes",
+      "color": "Clear",
+      "glassType": "Highball",
+      "ice": "Cubes"
+    },
+    "source": "Self",
+    "steps": "Combine tonic and gin in a highball glass filled with ice. Add lime juice. Garnish with a lime wedge and serve."
+  }, {
+    "id": 2,
+    "default": true,
+    "dateCreated": "2017-08-26",
+    "hidden": false,
+    "favorite": true,
+    "name": "Moscow Mule",
+    "ingredients": [{
+        "name": "Vodka",
+        "type": "Alcohol",
+        "quantity": 2,
+        "unit": "oz"
+      },
+      {
+        "name": "Ginger beer",
+        "type": "Mixer",
+        "quantity": 4,
+        "unit": "oz"
+      },
+      {
+        "name": "Lime juice",
+        "type": "Fruit juice",
+        "quantity": 0.5,
+        "unit": "oz"
+      },
+      {
+        "name": "Lime wedge",
+        "type": "Garnish",
+        "quantity": 1,
+        "unit": null
+      }
+    ],
+    "details": {
+      "category": "Highball, Collins, and Fizzes",
+      "color": "Clear",
+      "glassType": "Highball",
+      "ice": "Cubes"
+    },
+    "source": "Self",
+    "steps": "Combine vodka and ginger beer in a highball glass filled with ice. Add lime juice. Garnish with a lime wedge and serve."
+  }]
+}
