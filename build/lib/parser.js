@@ -9,7 +9,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("graceful-fs");
-const uuid = require("uuid");
+const uuid_1 = require("uuid");
 const categoryConverter_1 = require("./categoryConverter");
 const readFile = (filePath) => __awaiter(this, void 0, void 0, function* () {
     return new Promise((resolve, reject) => {
@@ -79,7 +79,7 @@ const processDrinkList = inputDrinks => {
             },
             favorite: false,
             hidden: false,
-            id: uuid.v4(),
+            id: uuid_1.v1(),
             ingredients: parsedIngredients,
             name,
             source: "IBA Official Cocktail",
