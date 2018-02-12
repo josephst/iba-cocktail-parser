@@ -1,18 +1,22 @@
-import * as fs from 'graceful-fs';
+import * as fs from "graceful-fs";
+import {v1 as uuid} from "uuid";
 
-import { convertCategory } from './categoryConverter';
+import { convertCategory } from "./categoryConverter";
 
-import { Drink as OutputDrink, Ingredient as OutputIngredient } from '../drink.d';
-import { InputDrink, SpecialIngredient } from '../inputDrink.d';
+import {
+  Drink as OutputDrink,
+  Ingredient as OutputIngredient
+} from "../drink.d";
+import { InputDrink, SpecialIngredient } from "../inputDrink.d";
 
 const readFile = async (filePath: string) => {
   return new Promise((resolve, reject) => {
-    fs.stat(filePath, (err) => {
+    fs.stat(filePath, err => {
       if (err) {
         reject(err);
         return;
       }
-      fs.readFile(filePath, 'UTF-8', (readErr, data) => {
+      fs.readFile(filePath, "UTF-8", (readErr, data) => {
         if (readErr) {
           reject(readErr);
           return;
@@ -28,49 +32,57 @@ const readFile = async (filePath: string) => {
   }) as Promise<InputDrink[]>;
 };
 
-const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) => {
-  return inputDrinks.map((inputDrink, index) => {
+const processDrinkList: (
+  input: InputDrink[]
+) => OutputDrink[] = inputDrinks => {
+  return inputDrinks.map((inputDrink) => {
     const { name, preparation, ingredients, glass } = inputDrink;
-    const parsedIngredients = ingredients.map((inputIngredient) => {
+    const parsedIngredients = ingredients.map(inputIngredient => {
       if (isSpecialIngredient(inputIngredient)) {
-        return ({
+        return {
           name: inputIngredient.special,
           quantity: 0,
-          type: 'Unknown',
-          unit: null,
-        }) as OutputIngredient;
+          type: "Unknown",
+          unit: null
+        } as OutputIngredient;
       } else {
         let unit;
         switch (inputIngredient.unit) {
-          case ('cl'): unit = 'cL'; break;
-          case ('ml'): unit = 'mL'; break;
-          default: unit = inputIngredient.unit; break;
+          case "cl":
+            unit = "cL";
+            break;
+          case "ml":
+            unit = "mL";
+            break;
+          default:
+            unit = inputIngredient.unit;
+            break;
         }
-        return ({
+        return {
           name: inputIngredient.label || inputIngredient.ingredient,
           quantity: inputIngredient.amount,
-          type: 'Unknown',
-          unit,
-        }) as OutputIngredient;
+          type: "Unknown",
+          unit
+        } as OutputIngredient;
       }
     });
 
     const parsed: OutputDrink = {
-      dateCreated: (new Date()).toLocaleDateString(),
+      dateCreated: new Date().toLocaleDateString(),
       default: true,
       details: {
         category: convertCategory(name),
-        color: 'TODO',
+        color: "TODO",
         glassType: glass,
-        ice: 'TODO',
+        ice: "TODO"
       },
       favorite: false,
       hidden: false,
-      id: 1000 + index,
+      id: uuid(),
       ingredients: parsedIngredients,
       name,
-      source: 'IBA Official Cocktail',
-      steps: preparation || 'No instructions given',
+      source: "IBA Official Cocktail",
+      steps: preparation || "No instructions given"
     };
     return parsed;
   });
@@ -79,13 +91,15 @@ const processDrinkList: (input: InputDrink[]) => OutputDrink[] = (inputDrinks) =
 const writeOutput = async (outPath: string, drinks: OutputDrink[]) => {
   return new Promise((resolve, reject) => {
     const output = { drinks };
-    fs.writeFile(outPath, JSON.stringify(output, null, 2), (err) => {
+    fs.writeFile(outPath, JSON.stringify(output, null, 2), err => {
       err ? reject(err) : resolve();
     });
   });
 };
 
-const isSpecialIngredient = (ingredient: any): ingredient is SpecialIngredient => {
+const isSpecialIngredient = (
+  ingredient: any
+): ingredient is SpecialIngredient => {
   return ingredient.special !== undefined;
 };
 

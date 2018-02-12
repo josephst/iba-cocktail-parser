@@ -9,15 +9,16 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs = require("graceful-fs");
+const uuid = require("uuid");
 const categoryConverter_1 = require("./categoryConverter");
 const readFile = (filePath) => __awaiter(this, void 0, void 0, function* () {
     return new Promise((resolve, reject) => {
-        fs.stat(filePath, (err) => {
+        fs.stat(filePath, err => {
             if (err) {
                 reject(err);
                 return;
             }
-            fs.readFile(filePath, 'UTF-8', (readErr, data) => {
+            fs.readFile(filePath, "UTF-8", (readErr, data) => {
                 if (readErr) {
                     reject(readErr);
                     return;
@@ -34,55 +35,55 @@ const readFile = (filePath) => __awaiter(this, void 0, void 0, function* () {
     });
 });
 exports.readFile = readFile;
-const processDrinkList = (inputDrinks) => {
-    return inputDrinks.map((inputDrink, index) => {
+const processDrinkList = inputDrinks => {
+    return inputDrinks.map((inputDrink) => {
         const { name, preparation, ingredients, glass } = inputDrink;
-        const parsedIngredients = ingredients.map((inputIngredient) => {
+        const parsedIngredients = ingredients.map(inputIngredient => {
             if (isSpecialIngredient(inputIngredient)) {
-                return ({
+                return {
                     name: inputIngredient.special,
                     quantity: 0,
-                    type: 'Unknown',
-                    unit: null,
-                });
+                    type: "Unknown",
+                    unit: null
+                };
             }
             else {
                 let unit;
                 switch (inputIngredient.unit) {
-                    case ('cl'):
-                        unit = 'cL';
+                    case "cl":
+                        unit = "cL";
                         break;
-                    case ('ml'):
-                        unit = 'mL';
+                    case "ml":
+                        unit = "mL";
                         break;
                     default:
                         unit = inputIngredient.unit;
                         break;
                 }
-                return ({
+                return {
                     name: inputIngredient.label || inputIngredient.ingredient,
                     quantity: inputIngredient.amount,
-                    type: 'Unknown',
-                    unit,
-                });
+                    type: "Unknown",
+                    unit
+                };
             }
         });
         const parsed = {
-            dateCreated: (new Date()).toLocaleDateString(),
+            dateCreated: new Date().toLocaleDateString(),
             default: true,
             details: {
                 category: categoryConverter_1.convertCategory(name),
-                color: 'TODO',
+                color: "TODO",
                 glassType: glass,
-                ice: 'TODO',
+                ice: "TODO"
             },
             favorite: false,
             hidden: false,
-            id: 1000 + index,
+            id: uuid.v4(),
             ingredients: parsedIngredients,
             name,
-            source: 'IBA Official Cocktail',
-            steps: preparation || 'No instructions given',
+            source: "IBA Official Cocktail",
+            steps: preparation || "No instructions given"
         };
         return parsed;
     });
@@ -91,7 +92,7 @@ exports.processDrinkList = processDrinkList;
 const writeOutput = (outPath, drinks) => __awaiter(this, void 0, void 0, function* () {
     return new Promise((resolve, reject) => {
         const output = { drinks };
-        fs.writeFile(outPath, JSON.stringify(output, null, 2), (err) => {
+        fs.writeFile(outPath, JSON.stringify(output, null, 2), err => {
             err ? reject(err) : resolve();
         });
     });

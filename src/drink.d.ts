@@ -1,5 +1,5 @@
 export interface Drink {
-  id: number;
+  id: string; // uuid
   default: boolean;
   dateCreated: string;
   hidden: boolean;

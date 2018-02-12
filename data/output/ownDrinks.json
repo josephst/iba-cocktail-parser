@@ -1,6 +1,6 @@
 {
   "drinks": [{
-    "id": 1,
+    "id": "08df30b3-6137-43b5-bd69-a22a2f68bd8f",
     "default": true,
     "dateCreated": "2017-07-20",
     "hidden": false,
@@ -40,7 +40,7 @@
     "source": "Self",
     "steps": "Combine tonic and gin in a highball glass filled with ice. Add lime juice. Garnish with a lime wedge and serve."
   }, {
-    "id": 2,
+    "id": "b2395580-bce1-4e17-92ac-9673e778993c",
     "default": true,
     "dateCreated": "2017-08-26",
     "hidden": false,

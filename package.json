@@ -9,11 +9,13 @@
   "dependencies": {
     "graceful-fs": "^4.1.11",
     "lodash": "^4.17.4",
-    "meow": "^3.7.0"
+    "meow": "^3.7.0",
+    "uuid": "^3.2.1"
   },
   "devDependencies": {
     "@types/graceful-fs": "^4.1.1",
     "@types/lodash": "^4.14.76",
-    "@types/meow": "^3.6.2"
+    "@types/meow": "^3.6.2",
+    "@types/uuid": "^3.4.3"
   }
 }
