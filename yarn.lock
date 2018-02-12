@@ -3,14 +3,14 @@
 
 
 "@types/graceful-fs@^4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.1.tgz#841a2c426b3ad82c976e8077745cc218101068e2"
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.2.tgz#fbc9575dbcc6d1d91dd768d30c5fc0c19f6c50bd"
   dependencies:
     "@types/node" "*"
 
 "@types/lodash@^4.14.76":
-  version "4.14.76"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.76.tgz#87874f766774d54e89589697340be9496fb8bf70"
+  version "4.14.102"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.102.tgz#586a3e22385fc79b07cef9c5a1c8a5387986fbc8"
 
 "@types/meow@^3.6.2":
   version "3.6.2"
@@ -23,8 +23,8 @@
   resolved "https://registry.yarnpkg.com/@types/minimist/-/minimist-1.2.0.tgz#69a23a3ad29caf0097f06eda59b361ee2f0639f6"
 
 "@types/node@*":
-  version "8.0.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.31.tgz#d9af61093cf4bfc9f066ca34de0175012cfb0ce9"
+  version "9.4.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.5.tgz#d2a90c634208173d1b1a0a6ba9f1df3de62edcf5"
 
 "@types/uuid@^3.4.3":
   version "3.4.3"
@@ -123,8 +123,8 @@ load-json-file@^1.0.0:
     strip-bom "^2.0.0"
 
 lodash@^4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
 loud-rejection@^1.0.0:
   version "1.6.0"
